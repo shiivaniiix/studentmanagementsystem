@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Admin Panel</h2>
+        <hr>
+        <h3>Add Student</h3>
+        <form action="/add_student" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" class="form-control" id="age" name="age" required>
+            </div>
+            <div class="form-group">
+                <label for="grade">Grade:</label>
+                <input type="number" class="form-control" id="grade" name="grade" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Student</button>
+        </form>
+        <hr>
+        <!-- Other functionalities like update, delete, and view students can be added similarly -->
+    </div>
+</body>
+</html>
